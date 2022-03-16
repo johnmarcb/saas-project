@@ -34,7 +34,10 @@ ul {
   list-style: none;
   color: var(--font-color-base);
 }
-
+svg {
+  width: 24px;
+  height: 24px;
+}
 /* ----- CSS Utilities ----- */
 .flex {
   display: flex;

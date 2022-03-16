@@ -1,6 +1,22 @@
 .nav-top {
-  margin-top: -10px;
+  margin-top: -0.625rem;
+  font-size: var(--size-14);
+}
+.nav-top ul {
+  gap: var(--size-20);
 }
 .nav-top ul li:first-child {
-  margin-left: auto;
+  margin-right: auto;
+}
+.nav-top ul li {
+  align-items: center;
+  gap: var(--size-10);
+}
+.nav-top li svg {
+  width: var(--size-10);
+  fill: var(--font-color-base);
+}
+.logo {
+  width: var(--size-150);
+  height: auto;
 }

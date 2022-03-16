@@ -5,6 +5,7 @@
   --font-color-dark: #212529;
   --font-color-light: #b0aebe;
   --font-color-link: #57a6ff;
+  --size-5: 0.3125rem;
   --size-10: 0.625rem;
   --size-14: 0.875rem;
   --size-16: 1rem;
@@ -16,15 +17,22 @@
   --size-100: 6.25rem;
   --size-150: 9.375rem;
 }
-
 *,
 ::before,
 ::after {
   box-sizing: border-box;
 }
+body {
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+}
+nav {
+  padding: 0;
+}
 ul {
   padding: 0;
   list-style: none;
+  color: var(--font-color-base);
 }
 
 /* ----- CSS Utilities ----- */
@@ -33,4 +41,7 @@ ul {
 }
 .grid {
   display: grid;
+}
+.container {
+  margin: 0 4.375rem;
 }

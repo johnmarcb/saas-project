@@ -4,7 +4,7 @@
   --font-color-base: #666;
   --font-color-dark: #212529;
   --font-color-light: #b0aebe;
-  --font-color-link: #57a6ff;
+  --font-color-link: #377dff;
   --size-5: 0.3125rem;
   --size-10: 0.625rem;
   --size-14: 0.875rem;
@@ -34,9 +34,11 @@ ul {
   list-style: none;
   color: var(--font-color-base);
 }
+a {
+  text-decoration: none;
+}
 svg {
   width: 24px;
-  height: 24px;
 }
 /* ----- CSS Utilities ----- */
 .flex {
@@ -47,4 +49,14 @@ svg {
 }
 .container {
   margin: 0 4.375rem;
+}
+.btn {
+  border: solid 1px transparent;
+  border-radius: var(--size-20);
+  padding: 8px var(--size-10);
+  color: var(--white);
+  background: var(--font-color-link);
+  font-size: var(--size-10);
+  font-weight: 800;
+  white-space: nowrap;
 }

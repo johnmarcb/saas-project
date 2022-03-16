@@ -16,3 +16,21 @@
   --size-100: 6.25rem;
   --size-150: 9.375rem;
 }
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* ----- CSS Utilities ----- */
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}

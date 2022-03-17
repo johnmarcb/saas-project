@@ -26,6 +26,11 @@ body {
   font-family: "Roboto", sans-serif;
   margin: auto;
 }
+header,
+main,
+footer {
+  margin: 0 5%;
+}
 nav {
   padding: 0;
 }
@@ -36,16 +41,20 @@ ul {
 }
 a {
   text-decoration: none;
+  color: var(--font-color-link);
+  fill: var(--font-color-link);
 }
 h1 {
   font-size: var(--size-50);
   font-weight: 500;
+  line-height: 1.3;
+  margin: 0;
 }
 svg {
   width: 24px;
 }
-img {
-  max-width: 100%;
+.btn > svg {
+  width: var(--size-14);
 }
 /* ----- CSS Utilities ----- */
 .flex {
@@ -70,10 +79,15 @@ img {
   font-weight: 600;
   white-space: nowrap;
   fill: var(--white);
-  display: flex;
   align-items: center;
   gap: 5px;
+  min-width: fit-content;
 }
-.btn > svg {
-  width: var(--size-14);
+.round-icon {
+  border: solid 1px transparent;
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--white);
+  width: fit-content;
 }

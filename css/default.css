@@ -37,8 +37,15 @@ ul {
 a {
   text-decoration: none;
 }
+h1 {
+  font-size: var(--size-50);
+  font-weight: 500;
+}
 svg {
   width: 24px;
+}
+img {
+  max-width: 100%;
 }
 /* ----- CSS Utilities ----- */
 .flex {
@@ -50,13 +57,23 @@ svg {
 .container {
   margin: 0 4.375rem;
 }
+.block-text {
+  max-width: 375px;
+}
 .btn {
   border: solid 1px transparent;
   border-radius: var(--size-20);
-  padding: 8px var(--size-10);
+  padding: var(--size-10) var(--size-14);
   color: var(--white);
   background: var(--font-color-link);
   font-size: var(--size-10);
-  font-weight: 800;
+  font-weight: 600;
   white-space: nowrap;
+  fill: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.btn > svg {
+  width: var(--size-14);
 }

@@ -16,23 +16,47 @@
   width: var(--size-10);
   fill: var(--font-color-base);
 }
+
 .nav-bottom {
-  border: solid 1px;
+  margin: auto;
   align-items: center;
-}
-.logo {
-  width: var(--size-150);
-  height: 100%;
-  margin-right: auto;
-  /* flex-shrink: 0; */
+  justify-content: space-between;
+  color: var(--font-color-base);
 }
 .nav-bottom ul {
   gap: var(--size-10);
   align-items: center;
 }
-
 .nav-bottom ul li a {
   color: var(--font-color-base);
   font-size: var(--size-14);
   padding: 0 var(--size-5);
+}
+.nav-bottom ul li a.current {
+  color: var(--font-color-link);
+}
+
+.logo {
+  width: var(--size-150);
+  flex-shrink: 0;
+}
+.section-1 {
+  align-items: center;
+}
+.section-1 .block-text p {
+  margin-top: var(--size-5);
+  color: var(--font-color-base);
+  font-size: var(--size-18);
+}
+.section-1 .block-text .btn {
+  font-size: var(--size-14);
+}
+.section-1 .block-text a {
+  margin-left: 10px;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--size-14);
+}
+.section-1 .block-text a svg {
+  width: 6px;
 }

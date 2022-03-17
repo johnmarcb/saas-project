@@ -16,7 +16,23 @@
   width: var(--size-10);
   fill: var(--font-color-base);
 }
+.nav-bottom {
+  border: solid 1px;
+  align-items: center;
+}
 .logo {
   width: var(--size-150);
-  height: auto;
+  height: 100%;
+  margin-right: auto;
+  /* flex-shrink: 0; */
+}
+.nav-bottom ul {
+  gap: var(--size-10);
+  align-items: center;
+}
+
+.nav-bottom ul li a {
+  color: var(--font-color-base);
+  font-size: var(--size-14);
+  padding: 0 var(--size-5);
 }

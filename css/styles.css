@@ -41,12 +41,9 @@
   flex-shrink: 0;
 }
 .section-1 {
-  margin-top: var(--size-100);
   justify-content: space-between;
 }
 .section-1 .block-text p {
-  margin-top: var(--size-5);
-  color: var(--font-color-base);
   font-size: var(--size-18);
 }
 .section-1 .block-text .btn {
@@ -62,6 +59,7 @@
   width: 6px;
 }
 .icon-container {
+  margin-left: var(--size-50);
   width: 100%;
   position: relative;
   place-items: center;
@@ -104,4 +102,20 @@
 .round-icon:last-child {
   grid-column: 4;
   grid-row: 5;
+}
+/* ----- Section 2 ----- */
+.section-2 {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section-2 .block-text {
+  max-width: fit-content;
+  text-align: center;
+}
+.section-2 .card-container {
+  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+}
+.card a svg {
+  margin-left: var(--size-10);
 }

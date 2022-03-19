@@ -25,7 +25,7 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: auto;
-  background-color: rgb(218, 209, 193);
+  /* background-color: rgb(218, 209, 193); */
 }
 header,
 main,
@@ -105,9 +105,12 @@ img {
   gap: 5px;
   min-width: fit-content;
 }
+.block-text .btn {
+  font-size: var(--size-14);
+}
 .round-icon {
   border: solid 1px transparent;
-  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 30px 1px rgba(0, 0, 0, 0.1);
   padding: 18px;
   border-radius: 50%;
   background-color: var(--white);
@@ -115,8 +118,12 @@ img {
   position: relative;
 }
 .card {
-  max-width: 300px;
-  border: solid blue 1px;
+  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.05);
+  max-width: fit-content;
+  border: solid 1px transparent;
   flex-direction: column;
   gap: 10px;
+  padding: var(--size-20);
+  border-radius: var(--size-5);
+  background: var(--white);
 }

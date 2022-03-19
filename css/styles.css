@@ -46,9 +46,6 @@
 .section-1 .block-text p {
   font-size: var(--size-18);
 }
-.section-1 .block-text .btn {
-  font-size: var(--size-14);
-}
 .section-1 .block-text a {
   margin-left: 10px;
   align-items: center;
@@ -116,10 +113,18 @@
 .section-2 .card-container {
   width: 100%;
   margin-top: var(--size-20);
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   place-items: center;
-  gap: 20px;
-  border: solid;
+  gap: var(--size-20);
+}
+.card h3 {
+  align-items: center;
+  gap: var(--size-10);
+}
+.card h3 .btn {
+  padding: 2px 5px;
+  font-size: 12px;
+  background: #00c9a6;
 }
 .card p {
   font-size: var(--size-14);
@@ -135,4 +140,28 @@
 }
 .card a svg {
   margin-left: var(--size-10);
+}
+
+.section-3 {
+  padding-top: var(--size-50);
+  padding-left: var(--size-50);
+  background-color: #f8fafe;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-20);
+}
+.section-3 .block-text button {
+  margin-top: var(--size-20);
+}
+.section-3 .banner-container img {
+  min-width: 100%;
+  box-shadow: -5px 10px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.section-4 {
+  justify-content: center;
+  flex-direction: column;
+}
+.section-4 .block-text {
+  text-align: center;
+  max-width: 100%;
 }

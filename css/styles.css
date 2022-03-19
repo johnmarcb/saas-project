@@ -68,7 +68,7 @@
   grid-template-rows: repeat(5, 1fr);
 }
 .icon-container .round-icon img {
-  max-width: var(--size-30);
+  width: var(--size-30);
 }
 .icon-container .round-icon.sml {
   padding: 10px;
@@ -114,7 +114,24 @@
   text-align: center;
 }
 .section-2 .card-container {
-  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  width: 100%;
+  margin-top: var(--size-20);
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  place-items: center;
+  gap: 20px;
+  border: solid;
+}
+.card p {
+  font-size: var(--size-14);
+  margin-top: 0;
+  line-height: 1.5;
+  color: var(--font-color-base);
+}
+.card img {
+  max-width: var(--size-50);
+}
+.card a {
+  font-size: var(--size-14);
 }
 .card a svg {
   margin-left: var(--size-10);

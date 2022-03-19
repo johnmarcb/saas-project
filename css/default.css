@@ -25,12 +25,16 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: auto;
-  background-color: #212529;
+  background-color: rgb(218, 209, 193);
 }
 header,
 main,
 footer {
   margin: 0 5%;
+}
+section {
+  border: solid 1px red;
+  margin-top: var(--size-100);
 }
 nav {
   padding: 0;
@@ -44,15 +48,31 @@ a {
   text-decoration: none;
   color: var(--font-color-link);
   fill: var(--font-color-link);
+  display: flex;
+  align-items: center;
+}
+a svg {
+  width: 6px;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
 }
 h1 {
   font-size: var(--size-50);
   font-weight: 500;
   line-height: 1.3;
-  margin: 0;
+}
+h2 {
+  font-size: var(--size-30);
+  font-weight: 500;
 }
 svg {
   width: 24px;
+}
+img {
+  width: 100%;
 }
 .btn > svg {
   width: var(--size-14);
@@ -64,11 +84,12 @@ svg {
 .grid {
   display: grid;
 }
-.container {
-  margin: 0 4.375rem;
-}
 .block-text {
   max-width: 375px;
+}
+.block-text p {
+  margin-top: var(--size-5);
+  color: var(--font-color-base);
 }
 .btn {
   border: solid 1px transparent;
@@ -92,4 +113,10 @@ svg {
   background-color: var(--white);
   width: fit-content;
   position: relative;
+}
+.card {
+  max-width: 300px;
+  border: solid blue 1px;
+  flex-direction: column;
+  gap: 10px;
 }

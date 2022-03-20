@@ -102,7 +102,7 @@ img {
   gap: var(--size-5);
   min-width: fit-content;
 }
-.btn svg{
+.btn svg {
   max-width: var(--size-14);
 }
 .block-text .btn {
@@ -127,7 +127,7 @@ img {
   border-radius: var(--size-5);
   background: var(--white);
 }
-.btn svg.arrow-right{
+.btn svg.arrow-right {
   max-width: 5px;
   stroke: var(--white);
   stroke-width: 45;

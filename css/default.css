@@ -74,9 +74,6 @@ svg {
 img {
   width: 100%;
 }
-.btn > svg {
-  width: var(--size-14);
-}
 /* ----- CSS Utilities ----- */
 .flex {
   display: flex;
@@ -94,16 +91,19 @@ img {
 .btn {
   border: solid 1px transparent;
   border-radius: var(--size-20);
-  padding: var(--size-10) var(--size-14);
+  padding: var(--size-10) var(--size-16);
   color: var(--white);
   background: var(--font-color-link);
-  font-size: var(--size-10);
-  font-weight: 600;
+  font-size: var(--size-14);
+  font-weight: 500;
   white-space: nowrap;
   fill: var(--white);
   align-items: center;
-  gap: 5px;
+  gap: var(--size-5);
   min-width: fit-content;
+}
+.btn svg{
+  max-width: var(--size-14);
 }
 .block-text .btn {
   font-size: var(--size-14);
@@ -126,4 +126,9 @@ img {
   padding: var(--size-20);
   border-radius: var(--size-5);
   background: var(--white);
+}
+.btn svg.arrow-right{
+  max-width: 5px;
+  stroke: var(--white);
+  stroke-width: 45;
 }

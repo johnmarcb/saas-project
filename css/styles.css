@@ -64,7 +64,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
 }
-.icon-container .round-icon img {
+.round-icon img {
   width: var(--size-30);
 }
 .icon-container .round-icon.sml {
@@ -161,35 +161,84 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 300px;
+  gap: 30px;
 }
 .section-4 .block-text {
   text-align: center;
   max-width: 100%;
 }
-.dot-section-container {
+.dot-wrapper {
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.dot-card {
   width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dot-card strong {
+  font-weight: 500;
 }
 .dot-container {
+  width: 100%;
+  justify-content: center;
   align-items: center;
   gap: var(--size-10);
 }
-.dot {
+.circle {
   background-color: #ecf2ff;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
   height: 40px;
+  min-width: 40px;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
 }
-.dot svg {
+.circle svg {
   width: 5px;
   fill: var(--font-color-link);
 }
-.line-container hr {
+.line {
+  width: 100%;
+  min-width: 50px;
+}
+.line.line-hidden hr {
+  display: none;
+}
+.line hr {
   margin: 0;
   padding: 0;
   border: none;
-  width: var(--size-100);
+  /* width: 72.5px; */
   height: 2px;
-  background-color: var(--font-color-light);
+  background: #e8eaf3;
+}
+.banner-wrapper {
+  background: url(/assets/banners/banner_two.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+}
+.banner-wrapper .play-icon {
+  background-color: var(--white);
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px transparent;
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0px 5px 30px 1px rgba(0, 0, 0, 0.1);
+}
+.banner-wrapper .play-icon svg {
+  max-width: 10px;
+  fill: var(--font-color-dark);
 }

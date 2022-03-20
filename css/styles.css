@@ -242,21 +242,34 @@
 }
 
 .section-5 {
+  align-items: center;
+  justify-content: center;
 }
 .img-container {
-  border: solid blue 1px;
   position: relative;
-  width: 100%;
   height: 100%;
-}
-.img-container .woman-three {
-  max-width: 445px;
-  max-height: 500px;
-  position: relative;
-  left: 55px;
-  bottom: 55px;
-  z-index: 1;
+  width: fit-content;
+  padding: 0px 55px 55px 55px;
 }
 .img-container .dot-graphic {
   max-width: 195px;
+  position: absolute;
+  z-index: -1;
+  bottom: 5px;
+  left: 0;
+}
+.section-5 .block-text {
+  flex-direction: column;
+  gap: var(--size-10);
+}
+.block-text strong {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--font-color-dark);
+  line-height: 1.8;
+}
+.block-text img {
+  max-width: var(--size-100);
+}
+.block-text h4 {
 }

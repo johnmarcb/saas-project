@@ -244,12 +244,17 @@
 .section-5 {
   align-items: center;
   justify-content: center;
+  gap: 30px;
+  /* flex-wrap: wrap; */
 }
 .img-container {
   position: relative;
   height: 100%;
   width: fit-content;
-  padding: 0px 55px 55px 55px;
+  padding: 0px 0px 55px 55px;
+}
+.img-container .woman-three {
+  width: 400px;
 }
 .img-container .dot-graphic {
   max-width: 195px;
@@ -270,6 +275,4 @@
 }
 .block-text img {
   max-width: var(--size-100);
-}
-.block-text h4 {
 }

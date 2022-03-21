@@ -78,6 +78,7 @@ svg {
 }
 img {
   width: 100%;
+  display: block;
 }
 /* ----- CSS Utilities ----- */
 .flex {

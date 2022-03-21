@@ -245,25 +245,27 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
-.img-container {
+.img-stack {
   position: relative;
-  height: 100%;
-  width: fit-content;
-  padding: 0px 0px 55px 55px;
+  grid-template-columns: repeat(8, 1fr);
+  max-width: 400px;
 }
-.img-container .woman-three {
-  width: 400px;
+.img-top {
+  grid-row: 1;
+  grid-column: 2 / span 8;
+  z-index: 1;
+  padding-bottom: 10%;
 }
-.img-container .dot-graphic {
-  max-width: 195px;
-  position: absolute;
-  z-index: -1;
-  bottom: 5px;
-  left: 0;
+.img-bottom {
+  padding-left: 10%;
+  grid-column: 1 / 4;
+  grid-row: 1;
+  align-self: flex-end;
 }
 .section-5 .block-text {
+  align-self: center;
   flex-direction: column;
   gap: var(--size-10);
 }

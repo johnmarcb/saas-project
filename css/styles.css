@@ -233,8 +233,8 @@
 }
 .banner-wrapper .play-icon {
   background-color: var(--white);
-  width: 40px;
-  height: 40px;
+  width: var(--size-40);
+  height: var(--size-40);
   align-items: center;
   justify-content: center;
   border: solid 1px transparent;
@@ -354,4 +354,45 @@
 }
 .feature .card img {
   max-width: var(--size-40);
+}
+.section-8 {
+  margin-bottom: var(--size-150);
+}
+form {
+  border: solid 1px blue;
+}
+form h4 {
+  text-align: center;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  padding: var(--size-16);
+  border-radius: var(--size-5);
+  border: solid 1px var(--font-color-light);
+  font-size: var(--size-14);
+  font-family: "Roboto", sans-serif;
+}
+fieldset {
+  border: none;
+  gap: var(--size-16);
+}
+.fieldset select {
+  font-weight: 500;
+}
+.checkbox {
+  width: fit-content;
+}
+fieldset label {
+  font-size: var(--size-12);
+  color: var(--font-color-base);
+}
+fieldset label span {
+  border-bottom: 1.5px dashed var(--font-color-base);
+}
+.form .btn.submit {
+  border-radius: 2px;
+  width: 100%;
+  padding: 15px;
 }

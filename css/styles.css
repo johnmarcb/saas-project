@@ -42,6 +42,7 @@
 }
 .section-1 {
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .section-1 .block-text p {
   font-size: var(--size-18);
@@ -56,8 +57,10 @@
   width: 6px;
 }
 .icon-container {
-  margin-left: var(--size-50);
+  justify-self: center;
   width: 100%;
+  max-width: 50%;
+  /* margin-left: var(--size-50); */
   position: relative;
   place-items: center;
   display: grid;
@@ -314,6 +317,7 @@
 .price-container {
   justify-content: space-evenly;
   flex-wrap: wrap;
+  gap: var(--size-10);
 }
 
 .big-card {
@@ -322,6 +326,7 @@
 }
 .big-card .card {
   padding: var(--size-30);
+  justify-content: center;
 }
 .big-card .card h2 {
   font-size: var(--size-50);
@@ -337,16 +342,16 @@
   margin-top: -5px;
   font-size: var(--size-12);
 }
-
 .feature {
-  margin-top: var(--size-20);
-  gap: var(--size-20);
-  flex-wrap: wrap;
-  /* align-items: center; */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--size-5);
   justify-content: center;
 }
 .feature .card {
-  border: solid aqua 1px;
   box-shadow: none;
-  flex-basis: 250px;
+  padding: var(--size-10);
+  flex-basis: 150px;
+}
+.feature .card img {
+  max-width: var(--size-40);
 }

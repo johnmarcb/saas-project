@@ -37,7 +37,7 @@
 }
 
 .logo {
-  width: var(--size-150);
+  width: var(--size-100);
   flex-shrink: 0;
 }
 .section-1 {
@@ -115,13 +115,14 @@
 }
 .section-2 .card-container {
   width: 100%;
-  margin-top: var(--size-20);
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  place-items: center;
-  gap: var(--size-20);
+  justify-content: space-evenly;
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  gap: var(--size-10);
+  flex-wrap: wrap;
 }
 .section-2 .card {
   padding: var(--size-20);
+  flex-basis: 250px;
 }
 .card h3 {
   align-items: center;
@@ -287,6 +288,7 @@
 .block-text img {
   max-width: var(--size-100);
 }
+
 .section-6 h4 {
   color: var(--font-color-base);
   font-size: var(--size-14);
@@ -356,13 +358,65 @@
   max-width: var(--size-40);
 }
 .section-8 {
-  margin-bottom: var(--size-150);
+  background-image: url(/assets/banners/wp8742118-topographic-wallpapers.png);
+  background-position: center;
+  background-size: cover;
+  margin: var(--size-100) 0;
+  padding: var(--size-50);
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.section-8 .block-text {
+  color: var(--white);
+}
+.section-8 .block-text p {
+  color: var(--font-color-light);
+  line-height: 1.5;
+}
+.section-8 .block-text .line {
+  margin: var(--size-20) 0;
+}
+.section-8 .block-text .line hr {
+  background-color: var(--font-color-base);
+  width: 50%;
+}
+.section-8 .block-text strong {
+  color: var(--white);
+}
+.author h4 {
+  font-size: var(--size-14);
+}
+.author p {
+  font-size: var(--size-14);
+}
+.author-icon-container {
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 0 var(--size-10);
+  gap: var(--size-20);
+}
+.author-icon {
+  width: var(--size-40);
+}
+.author-icon:last-child {
+  width: var(--size-50);
+}
+.author-icon img {
+  border-radius: 50%;
 }
 form {
-  border: solid 1px blue;
+  border: solid 1px var(--white);
+  background: var(--white);
+  flex-basis: 500px;
+  padding: var(--size-40) var(--size-20);
+  margin: var(--size-50) 0;
+  border-radius: var(--size-5);
 }
 form h4 {
-  text-align: center;
+  padding: 0 var(--size-16);
+  margin-bottom: var(--size-10);
 }
 input,
 select,
@@ -381,6 +435,9 @@ fieldset {
 .fieldset select {
   font-weight: 500;
 }
+.checkbox-container {
+  gap: var(--size-5);
+}
 .checkbox {
   width: fit-content;
 }
@@ -391,8 +448,43 @@ fieldset label {
 fieldset label span {
   border-bottom: 1.5px dashed var(--font-color-base);
 }
+.form button {
+  font-size: var(--size-16);
+}
 .form .btn.submit {
-  border-radius: 2px;
+  border-radius: 3px;
   width: 100%;
   padding: 15px;
+}
+footer {
+  justify-content: space-evenly;
+  margin-bottom: var(--size-50);
+  flex-wrap: wrap;
+  gap: var(--size-10);
+}
+.footer-child {
+  flex-basis: var(--size-150);
+}
+.footer-child ul {
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  gap: var(--size-16);
+}
+.footer-child ul li {
+  align-items: center;
+  font-size: var(--size-14);
+  gap: var(--size-10);
+}
+.footer-child svg {
+  width: var(--size-16);
+  fill: var(--font-color-base);
+}
+.footer-child:last-child svg {
+  width: var(--size-14);
+}
+.footer-child span.btn {
+  padding: 2px;
+  border-radius: var(--size-5);
+  font-size: var(--size-12);
 }

@@ -26,16 +26,16 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: auto;
-  /* background-color: rgb(218, 209, 193); */
 }
 header,
 main,
 footer {
-  margin: 0 5%;
+  /* margin: 0 5%; */
 }
 section {
   border: solid 1px red;
-  margin-top: var(--size-100);
+  /* margin-top: var(--size-100); */
+  margin: var(--size-50) 5%;
 }
 nav {
   padding: 0;

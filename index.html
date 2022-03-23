@@ -112,7 +112,7 @@
           <h2>Key Benefits</h2>
           <p>Design faster with a growing array of beautiful templates</p>
         </div>
-        <div class="card-container grid">
+        <div class="card-container flex">
           <div class="card flex">
             <img src="/assets/icons/responsive.svg" alt="responsive icon" />
             <h3>Responsive</h3>
@@ -366,7 +366,7 @@
           </div>
         </div>
       </section>
-      <section class="section-8">
+      <section class="section-8 flex">
         <div class="block-text">
           <h2>Hire Us</h2>
           <p>Whatever your goal - we will get you there.</p>
@@ -382,19 +382,30 @@
           <div class="author">
             <h4>Charlotte Moore</h4>
             <p>Head of commercials, Slack</p>
+            <div class="author-icon-container flex">
+              <div class="author-icon">
+                <img src="/assets/people/woman_one.jpg" alt="woman one" />
+              </div>
+              <div class="author-icon">
+                <img src="/assets/people/man_one.jpg" alt="man one" />
+              </div>
+              <div class="author-icon">
+                <img src="/assets/people/woman_two.jpg" alt="woman two" />
+              </div>
+            </div>
           </div>
         </div>
         <form action="#" class="form">
           <h4>Fill out the form and we'll be in touch as soon as possible</h4>
-          <fieldset class="fieldset">
+          <fieldset class="fieldset flex">
             <input type="text" placeholder="First name" />
             <input type="text" placeholder="Last name" />
           </fieldset>
-          <fieldset class="fieldset">
+          <fieldset class="fieldset flex">
             <input type="text" placeholder="Work email" />
             <input type="text" placeholder="Company website" />
           </fieldset>
-          <fieldset class="fieldset">
+          <fieldset class="fieldset flex">
             <select name="budget">
               <option value="budget">Budget</option>
               <option value="1">$1</option>
@@ -405,18 +416,115 @@
               <option value="us">US</option>
             </select>
           </fieldset>
-          <fieldset class="fieldset">
-            <textarea name="more" id="more" cols="30" rows="10"></textarea>
+          <fieldset class="fieldset flex">
+            <textarea
+              name="more"
+              id="more"
+              cols="10"
+              rows="3"
+              placeholder="Tell us more about your project, needs, and timeline."
+            ></textarea>
           </fieldset>
-          <fieldset class="fieldset">
-            <input type="checkbox" name="marketing" />
+          <fieldset class="flex checkbox-container">
+            <input class="checkbox" type="checkbox" name="marketing" />
             <label for="marketing"
               >Yes, I'd like to receive occasional marketing emails from Front. I have the
               right to opt out at any time. <span>View privacy policy</span></label
             >
           </fieldset>
+          <fieldset class="flex">
+            <button class="btn submit">Get Started</button>
+          </fieldset>
         </form>
       </section>
+      <footer>
+        <div class="footer-child">
+          <ul class="flex">
+            <li>
+              <div class="logo">
+                <img src="/assets/project_logo/logo.svg" alt="" />
+              </div>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  d="M285.6 444.1C279.8 458.3 264.8 466.3 249.8 463.4C234.8 460.4 223.1 447.3 223.1 432V256H47.1C32.71 256 19.55 245.2 16.6 230.2C13.65 215.2 21.73 200.2 35.88 194.4L387.9 50.38C399.8 45.5 413.5 48.26 422.6 57.37C431.7 66.49 434.5 80.19 429.6 92.12L285.6 444.1z"
+                />
+              </svg>
+              153 Williamson Paca, Maggieberg
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"
+                />
+              </svg>
+              +1 (062) 109-9222
+            </li>
+          </ul>
+        </div>
+        <div class="footer-child">
+          <ul class="flex">
+            <h5>Company</h5>
+            <li>About</li>
+            <li>Careers <span class="btn">We're hiring</span></li>
+            <li>Blog</li>
+            <li>Customers</li>
+            <li>Hire us</li>
+          </ul>
+        </div>
+        <div class="footer-child">
+          <ul class="flex">
+            <h5>Features</h5>
+            <li>Press</li>
+            <li>Release notes</li>
+            <li>Integrations</li>
+            <li>Pricing</li>
+          </ul>
+        </div>
+        <div class="footer-child">
+          <ul class="flex">
+            <h5>Features</h5>
+            <li>Press</li>
+            <li>Release notes</li>
+            <li>Integrations</li>
+            <li>Pricing</li>
+          </ul>
+        </div>
+        <div class="footer-child">
+          <ul class="flex">
+            <h5>Documentation</h5>
+            <li>Support</li>
+            <li>Docs</li>
+            <li>Status</li>
+            <li>API Reference</li>
+            <li>Tech Requirements</li>
+          </ul>
+        </div>
+        <div class="footer-child">
+          <ul class="flex">
+            <h5>Resources</h5>
+            <li class="flex">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"
+                /></svg
+              >Help
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                  d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c39.77 0 72 32.24 72 72S295.8 272 256 272c-39.76 0-72-32.24-72-72S216.2 128 256 128zM256 448c-52.93 0-100.9-21.53-135.7-56.29C136.5 349.9 176.5 320 224 320h64c47.54 0 87.54 29.88 103.7 71.71C356.9 426.5 308.9 448 256 448z"
+                />
+              </svg>
+            </li>
+            <li>Status</li>
+            <li>API Reference</li>
+            <li>Tech Requirements</li>
+          </ul>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

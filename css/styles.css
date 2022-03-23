@@ -463,6 +463,13 @@ footer {
   gap: var(--size-10);
 }
 .footer-child {
+  gap: var(--size-10);
+}
+.footer-child:first-child {
+  width: fit-content;
+  border: solid;
+}
+.footer-child:not(:first-child) {
   flex-basis: var(--size-150);
 }
 .footer-child ul {

@@ -62,6 +62,7 @@
   padding: 0 2%;
   z-index: 500;
   box-shadow: 0 0 20px rgba(52 49 75 / 10%);
+  transition: ease-in-out 1s;
 }
 .navbar-toggler {
   position: absolute;

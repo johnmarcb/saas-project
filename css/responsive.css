@@ -51,4 +51,7 @@
     margin: 0 5%;
     flex-basis: 100%;
   }
+  .footer-child:first-child {
+    flex-basis: 500px;
+  }
 }

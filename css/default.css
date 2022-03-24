@@ -28,14 +28,14 @@ body {
   margin: auto;
 }
 header,
-main,
+section,
 footer {
-  /* margin: 0 5%; */
+  margin-left: 5%;
+  margin-right: 5%;
 }
-section {
-  border: solid 1px red;
-  /* margin-top: var(--size-100); */
-  margin: var(--size-50) 5%;
+section,
+footer {
+  margin-top: var(--size-100);
 }
 nav {
   padding: 0;
@@ -58,7 +58,8 @@ a svg {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   margin: 0;
 }
 h1 {
@@ -74,12 +75,20 @@ h4 {
   font-size: var(--size-20);
   font-weight: 500;
 }
+h5 {
+  font-size: var(--size-16);
+  color: var(--font-color-dark);
+}
 svg {
   width: 24px;
 }
 img {
   width: 100%;
   display: block;
+}
+button,
+a {
+  cursor: pointer;
 }
 /* ----- CSS Utilities ----- */
 .flex {

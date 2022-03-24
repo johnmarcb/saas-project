@@ -1,3 +1,22 @@
+.bg-gradient {
+  background: url(/assets/banners/gradient.svg) no-repeat;
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+}
+.bg-shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.bg-shape svg {
+  fill: var(--black);
+  width: 100%;
+  height: auto;
+  margin-bottom: -1px;
+  vertical-align: middle;
+}
 .nav-top {
   margin-top: -0.625rem;
   font-size: var(--size-14);
@@ -57,10 +76,10 @@
   width: 6px;
 }
 .icon-container {
+  z-index: 10;
   justify-self: center;
   width: 100%;
   max-width: 50%;
-  /* margin-left: var(--size-50); */
   position: relative;
   place-items: center;
   display: grid;
@@ -115,9 +134,9 @@
 }
 .section-2 .card-container {
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: center;
   /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
-  gap: var(--size-10);
+  gap: var(--size-20);
   flex-wrap: wrap;
 }
 .section-2 .card {
@@ -161,7 +180,6 @@
   margin-top: var(--size-20);
 }
 .section-3 .banner-container img {
-  min-width: 100%;
   box-shadow: -5px 10px 15px 0px rgba(0, 0, 0, 0.1);
 }
 .section-4 {
@@ -262,7 +280,7 @@
 .img-top {
   grid-row: 1;
   grid-column: 2 / span 8;
-  z-index: 1;
+  z-index: 10;
   padding-bottom: 10%;
 }
 .img-top img {
@@ -358,9 +376,10 @@
   max-width: var(--size-40);
 }
 .section-8 {
-  background-image: url(/assets/banners/wp8742118-topographic-wallpapers.png);
+  background-image: url(/assets/banners/waves.svg);
+  background-color: rgb(33, 50, 91);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   margin: var(--size-100) 0;
   padding: var(--size-50);
   justify-content: space-evenly;
@@ -467,7 +486,6 @@ footer {
 }
 .footer-child:first-child {
   width: fit-content;
-  border: solid;
 }
 .footer-child:not(:first-child) {
   flex-basis: var(--size-150);
